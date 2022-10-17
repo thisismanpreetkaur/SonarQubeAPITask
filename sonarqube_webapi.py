@@ -28,10 +28,10 @@ print(add_metric_to_qualitygate("mk-qualitygate","coverage","80","LT"))
 
 ## Create Quality Profile
 ### api/qualityprofiles/create
-def create_quality_profile(language,name):
-    url = base_url + "/" + "qualityprofiles/create?language="+ language + "&name="+ name
-    req = requests.post(url, auth=(token, ''))
-    # print(req)
-    # print(req.json())
-    return req.json()
-print(create_quality_profile("py","mkprofile"))
+# def create_quality_profile(language,name):
+#     url = base_url + "/" + "qualityprofiles/create?language="+ language + "&name="+ name
+#     req = requests.post(url, auth=(token, ''))
+#     # print(req)
+#     # print(req.json())
+#     return req.json()
+# print(create_quality_profile("py","mkprofile"))
