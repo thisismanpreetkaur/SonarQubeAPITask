@@ -6,8 +6,8 @@ on:
     branches: ["master"]
 
 jobs:
-  name: Python
-  runs-on: ubantu-latest
+  - name: Python
+    runs-on: ubantu-latest
 
   steps:
     - uses: actions/checkout@v3
