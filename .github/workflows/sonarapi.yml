@@ -1,4 +1,4 @@
-name: 'Python SonarQube API Workflows'
+name: Python SonarQube API Workflows
 
 on:
   workflow_dispatch:
