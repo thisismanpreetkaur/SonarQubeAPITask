@@ -1,7 +1,11 @@
-name: Python SonarQube API Workflows
+name: 'Python SonarQube API Workflows'
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: 'Enter name of quality gate'
+        required: true
   
 
 jobs:
@@ -13,4 +17,4 @@ jobs:
       - uses: actions/setup-python@v2 
         
       - name: Run a python file
-        run: python sonarqube_webapi.py
+        run: python sonarqube_webapi.py ${{github.event.input.name}}
