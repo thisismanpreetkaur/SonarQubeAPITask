@@ -1,0 +1,19 @@
+name: Python SonarQube Workflows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["master"]
+
+jobs:
+  Run Sonarqube API file:
+    runs-on: ubantu-latest
+
+    steps:
+      -uses: actions/checkout@v3
+      -uses: actions/setup-python@v4
+       with:
+        python-version: 'pypy3.9' 
+
+      -name: Run a Sonarqube API Python File
+      - run: python sonarqube_webapi.py
