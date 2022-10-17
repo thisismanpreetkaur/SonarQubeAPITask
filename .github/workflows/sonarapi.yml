@@ -6,13 +6,17 @@ on:
     branches: ["master"]
 
 jobs:
-  runs-on: ubantu-latest
 
-  steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: 'pypy3.9' 
+  Run  Python demo file:
+
+    runs-on: ubantu-latest
+
+    steps:
+    
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 'pypy3.9' 
         
-    - name: Run a python file
-      run: python sonarqube_webapi.py
+      - name: Run a python file
+        run: python sonarqube_webapi.py
