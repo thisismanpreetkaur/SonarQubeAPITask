@@ -9,9 +9,9 @@ jobs:
   build:
     runs-on: ubantu-latest
 
-  steps:
-    - uses: actions/checkout@v3
-      - uses: actions/setup-python@v2 
-      
-    - name: Run a python file
-      run: python sonarqube_webapi.py
+    steps:
+      - uses: actions/checkout@v3
+        - uses: actions/setup-python@v2 
+        
+      - name: Run a python file
+        run: python sonarqube_webapi.py
