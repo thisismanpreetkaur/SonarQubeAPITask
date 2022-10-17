@@ -14,6 +14,4 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 'pypy3.9' 
-
-      - name: Run a Sonarqube API Python File
-      - run: python sonarqube_webapi.py
+        run: python sonarqube_webapi.py
