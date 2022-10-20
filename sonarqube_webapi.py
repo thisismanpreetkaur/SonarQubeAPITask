@@ -4,7 +4,7 @@ import json
 import sys
 
 base_url = "https://sonarqube.cloudeq.com/api"
-token = "ddb0fa86be8470f76f83c4436f457e4601e71700"
+token = ""
 
 name = sys.argv[1]
 
